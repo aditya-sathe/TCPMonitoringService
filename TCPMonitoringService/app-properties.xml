@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app-properties>
+    <general>
+        <queryInterval>30</queryInterval>
+        <queryTimeOut>2000</queryTimeOut>
+        <!-- Email settings for sending notifications -->
+        <emailuser>abc@gmail.com</emailuser> <!-- Gmail usename -->
+        <emailpass>password</emailpass> <!-- Gmail password -->
+    </general>
+    <servers>
+        <!-- <server>
+            <name>Server1</name>
+            <hostname>http://yoursite.fr</hostname>
+            <port>80</port>
+            <poolingfreq>5</poolingfreq> Execution period in seconds
+            <gracetime>1</gracetime> grace time in minutes
+            <sendAlertTo>
+                <email>example@abc.com</email>
+            </sendAlertTo>
+        </server> -->
+        <server>
+            <name>Server2</name>
+            <hostname>localhost</hostname>
+            <port>6666</port>
+            <poolingfreq>5</poolingfreq>
+            <gracetime>30</gracetime> <!-- grace time in minutes -->
+            <sendAlertTo>
+                <email>adisat@gmail.com</email>
+            </sendAlertTo>
+            <downTime>
+              <start>2019-08-15 13:55:00</start> <!-- yyyy-MM-dd hh:mm:ss -->	
+              <end>2019-08-15 20:30:00</end>
+            </downTime>
+        </server>
+    </servers>
+</app-properties>
